@@ -78,7 +78,7 @@ const options = {
 					// replace them so they go through the proxy
 					.replace(
 						new RegExp(`${SFRA_INSTANCE_ORIGIN}`, "g"),
-						`cc-hybrid.cyclic.app/`
+						`cc-hybrid.cyclic.app`
 					)
 			)
 		})(proxyRes, req, res)
