@@ -78,7 +78,7 @@ const options = {
 					// replace them so they go through the proxy
 					.replace(
 						new RegExp(`${SFRA_INSTANCE_ORIGIN}`, "g"),
-						`cc-hybrid.pages.dev`
+						`cc-hybrid.cyclic.app/`
 					)
 			)
 		})(proxyRes, req, res)
@@ -92,7 +92,7 @@ app.use(createProxyMiddleware(options))
 app.listen(PORT, err => {
 	if (err) throw err
 	console.log(
-		`Proxy server listening: https://cc-hybrid-app.herokuapp.com${PORT}`
+		`Proxy server listening: https://cc-hybrid.cyclic.app${PORT}`
 	)
 })
 
