@@ -16,6 +16,24 @@ const PWA_ROUTES = [
 		exact: true,
 	},
 	{
+		path: "/login",
+	},
+	{
+		path: "/registration",
+	},
+	{
+		path: "/account",
+	},
+	{
+		path: "/reset-password",
+	},
+	{
+		path: "/account/wishlist",
+	},
+	{
+		path: "/checkout/confirmation",
+	},
+	{
 		path: "/callback",
 	},
 	{
